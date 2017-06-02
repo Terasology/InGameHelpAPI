@@ -24,7 +24,7 @@ import org.terasology.inGameHelpAPI.components.HelpItem;
 public interface ItemsCategoryInGameHelpRegistry {
 
     /**
-     * Adds a Prefab and a variable amount of {@link org.terasology.inGameHelp.components.HelpItem}s that are associated with the prefab.
+     * Adds a Prefab and a variable amount of {@link org.terasology.inGameHelpAPI.components.HelpItem}s that are associated with the prefab.
      *
      * @param prefab the prefab to add.
      * @param helpItems the help items that are associated with the prefab.
