@@ -34,7 +34,7 @@ public class DefaultTitleParagraphStyle implements ParagraphRenderStyle {
      */
     @Override
     public Font getFont(boolean hyperlink) {
-        return Assets.getFont("engine:title").get();
+        return Assets.getFont("engine:NotoSans-Regular-Large").get();
     }
 
     /**
