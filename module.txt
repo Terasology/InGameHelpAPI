@@ -1,11 +1,10 @@
 {
     "id" : "InGameHelpAPI",
-    "version" : "0.1.1-SNAPSHOT",
+    "version" : "0.2.0",
     "author" : "xrtariq2594",
     "displayName" : "In Game Help API",
     "description" : "API for InGameHelp module.",
-    "dependencies" : [
-        {"id" : "Core", "minVersion" : "3.0.0"}
-    ],
-    "serverSideOnly" : false
+    "dependencies" : [],
+    "serverSideOnly" : false,
+    "isLibrary": true
 }
