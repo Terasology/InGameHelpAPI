@@ -4,7 +4,9 @@
     "author" : "xrtariq2594",
     "displayName" : "In Game Help API",
     "description" : "API for InGameHelp module.",
-    "dependencies" : [],
+    "dependencies" : [
+        {"id" : "Inventory", "minVersion" : "1.1.0"}
+    ],
     "serverSideOnly" : false,
     "isLibrary": true
 }
