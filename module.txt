@@ -1,12 +1,12 @@
 {
-    "id" : "InGameHelpAPI",
-    "version" : "0.2.0",
-    "author" : "xrtariq2594",
-    "displayName" : "In Game Help API",
-    "description" : "API for InGameHelp module.",
-    "dependencies" : [
-        {"id" : "Inventory", "minVersion" : "1.1.0"}
+    "id": "InGameHelpAPI",
+    "version": "1.0.0",
+    "author": "xrtariq2594",
+    "displayName": "In Game Help API",
+    "description": "API for InGameHelp module.",
+    "dependencies": [
+        { "id": "Inventory", "minVersion": "1.1.0" }
     ],
-    "serverSideOnly" : false,
+    "serverSideOnly": false,
     "isLibrary": true
 }
