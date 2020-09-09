@@ -3,26 +3,31 @@
 package org.terasology.inGameHelpAPI.ui;
 
 import org.joml.Rectanglei;
+import org.terasology.engine.rendering.nui.widgets.browser.data.basic.flow.FlowRenderable;
+import org.terasology.engine.rendering.nui.widgets.browser.ui.style.TextRenderStyle;
 import org.terasology.nui.Canvas;
 import org.terasology.nui.UIWidget;
-import org.terasology.rendering.nui.widgets.browser.data.basic.flow.FlowRenderable;
-import org.terasology.rendering.nui.widgets.browser.ui.style.TextRenderStyle;
 
 /**
  * Class that contains information about rendering the widget.
  */
 public class WidgetFlowRenderable implements FlowRenderable<WidgetFlowRenderable> {
-    /** The widget to render. */
+    /**
+     * The width.
+     */
+    private final int width;
+    /**
+     * The height.
+     */
+    private final int height;
+    /**
+     * The link to the document.
+     */
+    private final String hyperlink;
+    /**
+     * The widget to render.
+     */
     UIWidget widget;
-    
-    /** The width. */
-    private int width;
-
-    /** The height. */
-    private int height;
-
-    /** The link to the document. */
-    private String hyperlink;
 
     /**
      * Constructor for this class
