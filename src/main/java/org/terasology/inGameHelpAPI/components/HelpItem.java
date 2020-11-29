@@ -1,28 +1,19 @@
-/*
- * Copyright 2017 MovingBlocks
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+// Copyright 2020 The Terasology Foundation
+// SPDX-License-Identifier: Apache-2.0
 package org.terasology.inGameHelpAPI.components;
 
+import com.google.common.collect.Lists;
 import org.terasology.inGameHelpAPI.ui.DefaultTitleParagraphStyle;
 import org.terasology.rendering.nui.widgets.browser.data.ParagraphData;
 import org.terasology.rendering.nui.widgets.browser.data.basic.HTMLLikeParser;
 import org.terasology.rendering.nui.widgets.browser.data.html.HTMLDocument;
 
+import java.util.Collection;
+import java.util.List;
+
 /**
- * Interface that defines the composition of a help item.
- * This is composed of a title, category, and paragraphs of the description of this help item.
+ * Interface that defines the composition of a help item. This is composed of a title, category, and paragraphs of the
+ * description of this help item.
  */
 public interface HelpItem {
 
@@ -45,11 +36,26 @@ public interface HelpItem {
      * Adds help information to the document.
      *
      * @param documentData the document that is modified by adding help information.
+     * @deprecated use {@link #getHelpSection()} directly with {@link HTMLDocument#addParagraphs(Collection)} instead
      */
+    @Deprecated
     default void addHelpItemSection(HTMLDocument documentData) {
         documentData.addParagraph(HTMLLikeParser.parseHTMLLikeParagraph(new DefaultTitleParagraphStyle(), getTitle()));
         for (ParagraphData paragraph : getParagraphs()) {
             documentData.addParagraph(paragraph);
         }
+    }
+
+    /**
+     * The help section for this item in paragraphs. The first paragraph should hold a title or heading.
+     *
+     * @return a list of paragraphs for the comple help section for this item; first paragraph is a title
+     */
+    default List<ParagraphData> getHelpSection() {
+        ParagraphData title = HTMLLikeParser.parseHTMLLikeParagraph(new DefaultTitleParagraphStyle(), getTitle());
+
+        List<ParagraphData> result = Lists.newArrayList(title);
+        getParagraphs().forEach(result::add);
+        return result;
     }
 }
