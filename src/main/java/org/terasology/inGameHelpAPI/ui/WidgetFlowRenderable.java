@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 package org.terasology.inGameHelpAPI.ui;
 
-import org.joml.Rectanglei;
+import org.terasology.joml.geom.Rectanglei;
 import org.terasology.nui.Canvas;
 import org.terasology.nui.UIWidget;
 import org.terasology.rendering.nui.widgets.browser.data.basic.flow.FlowRenderable;
@@ -14,7 +14,7 @@ import org.terasology.rendering.nui.widgets.browser.ui.style.TextRenderStyle;
 public class WidgetFlowRenderable implements FlowRenderable<WidgetFlowRenderable> {
     /** The widget to render. */
     UIWidget widget;
-    
+
     /** The width. */
     private int width;
 
