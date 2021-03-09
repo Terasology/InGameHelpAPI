@@ -15,19 +15,20 @@
  */
 package org.terasology.inGameHelpAPI.ui;
 
-import org.terasology.utilities.Assets;
-import org.terasology.entitySystem.entity.EntityManager;
-import org.terasology.entitySystem.entity.EntityRef;
-import org.terasology.registry.CoreRegistry;
-import org.terasology.rendering.nui.layers.ingame.inventory.ItemCell;
-import org.terasology.world.block.BlockManager;
-import org.terasology.world.block.family.BlockFamily;
-import org.terasology.world.block.items.BlockItemFactory;
-import org.terasology.world.block.loader.BlockFamilyDefinition;
+import org.terasology.engine.entitySystem.entity.EntityManager;
+import org.terasology.engine.entitySystem.entity.EntityRef;
+import org.terasology.engine.registry.CoreRegistry;
+import org.terasology.engine.rendering.nui.layers.ingame.inventory.ItemCell;
+import org.terasology.engine.utilities.Assets;
+import org.terasology.engine.world.block.BlockManager;
+import org.terasology.engine.world.block.family.BlockFamily;
+import org.terasology.engine.world.block.items.BlockItemFactory;
+import org.terasology.engine.world.block.loader.BlockFamilyDefinition;
+
 import java.util.Optional;
 
 /**
- * Widget class for items that contains the behavior and what appears on the {@link org.terasology.rendering.nui.Canvas}. Typically used in conjunction with {@link WidgetFlowRenderable} to be added onto a document. Contains the name of the item's prefab as well as the entity reference to the item.
+ * Widget class for items that contains the behavior and what appears on the {@link org.terasology.engine.rendering.nui.Canvas}. Typically used in conjunction with {@link WidgetFlowRenderable} to be added onto a document. Contains the name of the item's prefab as well as the entity reference to the item.
  */
 public class ItemWidget extends ItemCell {
     /** Reference to the item's entity. */
@@ -46,7 +47,7 @@ public class ItemWidget extends ItemCell {
     }
 
     /**
-     * Gets this widget's {@link org.terasology.entitySystem.entity.EntityRef}. Creates a new entityref if this item is null.
+     * Gets this widget's {@link org.terasology.engine.entitySystem.entity.EntityRef}. Creates a new entityref if this item is null.
      *
      * @return the reference to this widget's Entity.
      */

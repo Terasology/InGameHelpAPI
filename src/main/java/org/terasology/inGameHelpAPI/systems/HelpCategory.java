@@ -15,8 +15,8 @@
  */
 package org.terasology.inGameHelpAPI.systems;
 
+import org.terasology.engine.rendering.nui.widgets.browser.data.DocumentData;
 import org.terasology.inGameHelpAPI.ItemsCategoryInGameHelpRegistry;
-import org.terasology.rendering.nui.widgets.browser.data.DocumentData;
 
 /**
  * Interface that manages how a specific help tab will function.

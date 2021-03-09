@@ -3,10 +3,10 @@
 package org.terasology.inGameHelpAPI.components;
 
 import com.google.common.collect.Lists;
+import org.terasology.engine.rendering.nui.widgets.browser.data.ParagraphData;
+import org.terasology.engine.rendering.nui.widgets.browser.data.basic.HTMLLikeParser;
+import org.terasology.engine.rendering.nui.widgets.browser.data.html.HTMLDocument;
 import org.terasology.inGameHelpAPI.ui.DefaultTitleParagraphStyle;
-import org.terasology.rendering.nui.widgets.browser.data.ParagraphData;
-import org.terasology.rendering.nui.widgets.browser.data.basic.HTMLLikeParser;
-import org.terasology.rendering.nui.widgets.browser.data.html.HTMLDocument;
 
 import java.util.Collection;
 import java.util.List;

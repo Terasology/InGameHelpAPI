@@ -15,7 +15,7 @@
  */
 package org.terasology.inGameHelpAPI;
 
-import org.terasology.entitySystem.prefab.Prefab;
+import org.terasology.engine.entitySystem.prefab.Prefab;
 import org.terasology.inGameHelpAPI.components.HelpItem;
 
 /**

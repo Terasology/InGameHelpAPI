@@ -15,11 +15,11 @@
  */
 package org.terasology.inGameHelpAPI.ui;
 
-import org.terasology.rendering.assets.font.Font;
-import org.terasology.rendering.nui.widgets.browser.ui.style.ContainerInteger;
-import org.terasology.rendering.nui.widgets.browser.ui.style.FixedContainerInteger;
-import org.terasology.rendering.nui.widgets.browser.ui.style.ParagraphRenderStyle;
-import org.terasology.utilities.Assets;
+import org.terasology.engine.rendering.assets.font.Font;
+import org.terasology.engine.rendering.nui.widgets.browser.ui.style.ContainerInteger;
+import org.terasology.engine.rendering.nui.widgets.browser.ui.style.FixedContainerInteger;
+import org.terasology.engine.rendering.nui.widgets.browser.ui.style.ParagraphRenderStyle;
+import org.terasology.engine.utilities.Assets;
 
 /**
  * The text rendering style for titles.

@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: Apache-2.0
 package org.terasology.inGameHelpAPI.ui;
 
+import org.terasology.engine.rendering.nui.widgets.browser.data.basic.flow.FlowRenderable;
+import org.terasology.engine.rendering.nui.widgets.browser.ui.style.TextRenderStyle;
 import org.terasology.joml.geom.Rectanglei;
 import org.terasology.nui.Canvas;
 import org.terasology.nui.UIWidget;
-import org.terasology.rendering.nui.widgets.browser.data.basic.flow.FlowRenderable;
-import org.terasology.rendering.nui.widgets.browser.ui.style.TextRenderStyle;
 
 /**
  * Class that contains information about rendering the widget.
