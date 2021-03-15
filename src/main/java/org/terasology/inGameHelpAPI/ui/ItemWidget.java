@@ -18,7 +18,7 @@ package org.terasology.inGameHelpAPI.ui;
 import org.terasology.engine.entitySystem.entity.EntityManager;
 import org.terasology.engine.entitySystem.entity.EntityRef;
 import org.terasology.engine.registry.CoreRegistry;
-import org.terasology.rendering.nui.layers.ingame.inventory.ItemCell;
+import org.terasology.module.inventory.ui.ItemCell;
 import org.terasology.engine.utilities.Assets;
 import org.terasology.engine.world.block.BlockManager;
 import org.terasology.engine.world.block.family.BlockFamily;
