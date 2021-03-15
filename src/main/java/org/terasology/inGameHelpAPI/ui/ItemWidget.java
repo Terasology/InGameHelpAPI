@@ -18,7 +18,7 @@ package org.terasology.inGameHelpAPI.ui;
 import org.terasology.engine.entitySystem.entity.EntityManager;
 import org.terasology.engine.entitySystem.entity.EntityRef;
 import org.terasology.engine.registry.CoreRegistry;
-import org.terasology.engine.rendering.nui.layers.ingame.inventory.ItemCell;
+import org.terasology.rendering.nui.layers.ingame.inventory.ItemCell;
 import org.terasology.engine.utilities.Assets;
 import org.terasology.engine.world.block.BlockManager;
 import org.terasology.engine.world.block.family.BlockFamily;
@@ -39,7 +39,7 @@ public class ItemWidget extends ItemCell {
 
     /**
      * Constructor for ItemWidget that takes in an item's prefab name.
-     * 
+     *
      * @param itemUrn the name of the prefab for item.
      */
     public ItemWidget(String itemUrn) {
