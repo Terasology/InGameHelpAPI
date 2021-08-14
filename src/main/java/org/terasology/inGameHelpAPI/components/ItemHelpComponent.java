@@ -49,7 +49,7 @@ public  class ItemHelpComponent implements Component<ItemHelpComponent>, HelpIte
     }
 
     @Override
-    public void copy(ItemHelpComponent other) {
+    public void copyFrom(ItemHelpComponent other) {
         this.title = other.title;
         this.category = other.category;
         this.paragraphText = Lists.newArrayList(other.paragraphText);
