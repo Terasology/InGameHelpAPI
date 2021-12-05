@@ -15,7 +15,7 @@
  */
 package org.terasology.inGameHelpAPI.event;
 
-import org.terasology.engine.entitySystem.event.Event;
+import org.terasology.gestalt.entitysystem.event.Event;
 import org.terasology.inGameHelpAPI.systems.HelpCategory;
 
 /**
